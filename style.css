@@ -94,3 +94,64 @@ h2 {
     color: #f9faf8;
     background-color: #3882f6;
 }
+
+.contain-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+h3 {
+    margin-inline: auto;
+    font-size: 2.25rem;
+    color: #1f2937;
+}
+
+.info-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.illustration {
+    width: 10rem;
+}
+
+.img-box {
+    width: 8rem;
+    height: 8rem;
+    border: #3882f6;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 13px;
+}
+
+.quote-container {
+    background-color: #e5e7eb;
+    padding: 4rem;
+}
+
+.contain-quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45rem;
+    margin: auto;
+}
+
+.quote {
+    flex-wrap: wrap;
+    margin: 0;
+    color: #1f2937;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.credit {
+    align-self: flex-end;
+    margin: 0;
+    font-weight: 700;
+}
