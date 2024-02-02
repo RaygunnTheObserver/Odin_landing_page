@@ -155,3 +155,49 @@ h3 {
     margin: 0;
     font-weight: 700;
 }
+
+.contain-grift {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    padding-inline: 5rem;
+    padding-block: 2rem;
+    margin-block: 3rem;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+
+.grift-title {
+    padding: 0;
+    margin:0;
+}
+
+.grift-text {
+    padding: 0;
+    margin:0;
+    font-size: 0.75rem;
+}
+
+.signup2 {
+    padding-inline: 1.3rem;
+    padding-block: 0.3rem;
+    border-radius: 6px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    color: #f9faf8;
+    background-color: #3882f6;
+
+}
+
+.footer-card {
+    display: flex;
+    justify-content: center;
+    background-color:#1f2937;
+}
+
+.footer {
+    color: white;
+}
