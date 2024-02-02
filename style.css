@@ -9,9 +9,9 @@ body {
     margin: 0;
 }
 
-.header, .hero, .footer {
+.blue {
+    padding: 0 10rem 10rem;
     background-color: #1f2937;
-    ;
 }
 
 .header {
@@ -19,7 +19,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding-inline: 4rem;
 }
 
 h4 {
@@ -41,7 +40,57 @@ a {
     font-size: 1.125rem;
 }
 
-.link-text {
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    padding-top: 4rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 16rem;
+    
+}
+
+.hero-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    flex: 1 0 auto;
+    color:#e5e7eb;
+    background-color: gray;
+}
+
+.img-placeholder {
+
+}
+
+h2 {
+    flex-wrap: wrap;
+    margin: 0;
+    font-size: 3rem;
+    color: #f9faf8;
+}
+
+.hero-text {
     font-size: 1.125rem;
     color: #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.signup1 {
+    align-self: flex-start;
+    padding-inline: 1.3rem;
+    padding-block: 0.3rem;
+    border-radius: 6px;
+    border: none;
+    color: #f9faf8;
+    background-color: #3882f6;
 }
