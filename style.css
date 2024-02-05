@@ -18,6 +18,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 6rem;
+    /* Resizing the window causes the header and hero sections to overflow into padding, wreaking havoc on formatting intentions i.e. keeping things centered. I suspect knowing Grid may help.
+    I'm running into problems now that I'm not sure I'm supposed to know how to fix at this point in my education.*/
     margin: 0;
 }
 
@@ -110,12 +113,15 @@ h3 {
 
 .info-images {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 45rem;
+    width: 100%
+    /* width:100% plus max-width solves viewport issues. space-around makes it look nice in small viewport, and centers content in max viewport given max-width (I think?)*/
 }
 
 .illustration {
+    max-width: 8.375rem;
+    /* keeps subtext in line with image box (incl. border) */
 }
 
 .img-box {
@@ -158,6 +164,7 @@ h3 {
 .grift-card {
     align-self: center;
     display: flex;
+    gap: 4rem;
     max-width: 35rem;
     width: 65%;
     padding-inline: 5rem;
@@ -169,9 +176,15 @@ h3 {
 }
 
 .contain-grift {
-    flex: 7;
+    flex: 1;
     display: flex;
     flex-direction: column;
+    /* a flex basis of >16 caused .signup2 text to wrap due to squish via the gap (as declared in
+    .grift-card). Given that:
+    .grift-card has hard limits {width: xxx; max-width:xxx; gap: xxx;} and
+    .signup2 {text-wrap:nowrap},
+    flex-basis can now be set to anything without issue; becomes irrelevant -
+    CONTINGENT upon .contain-grift{flex-grow:1}*/
 }
 
 .grift-title {
@@ -185,21 +198,21 @@ h3 {
     font-size: 0.75rem;
     min-width: 10rem;
     text-wrap: wrap;
-}
-
-.grift-empty {
-    flex: 2;
+    /* wrap is the default value; this declaration
+    is therefore superfluous */
 }
 
 .signup2 {
     align-self: center;
-    
     padding-inline: 1.3rem;
     padding-block: 0.3rem;
     border-radius: 6px;
     border: solid;
     border-color: white;
     border-width: 2px;
+    text-wrap: nowrap;
+    /* nowrap prevents button from vertical resizing
+    due to squish, rendering max-height unnecessary */
     color: #f9faf8;
     background-color: #3882f6;
 
