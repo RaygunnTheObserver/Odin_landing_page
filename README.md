@@ -23,9 +23,10 @@ The second is that justify-content becomes irrelevant in a flex container when a
 ---
 
 I kept getting confused when text-size wasn't doing anything lol. It's /font-size/, my guy, font-size!!
+
 ---
-Viewing another student's code, I see that I should use a <nav> tag instead of a <div> for the navigation links for accessibility reasons. The tags do not appear to have any differences in format.
+Viewing another student's code, I see that I should use a nav tag instead of a div for the navigation links for accessibility reasons. The tags do not appear to have any differences in format.
 
-Student also makes interesting use of <br/> (line break) tags to help control sizing.
+Student also makes interesting use of br/ (line break) tags to help control sizing.
 
-Student's css is neatly organized with <!-- titular notes --> between declaration sections.
+Student's css is neatly organized with /*titular notes*/ between declaration sections.
